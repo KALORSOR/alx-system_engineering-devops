@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | rev | cut -d '/' .f 1 | rev
+find . -type d -empty exec sh -c 'printf "%sn\" "${##*/}"'{} \; > empty_files_and_dirs.txt 
