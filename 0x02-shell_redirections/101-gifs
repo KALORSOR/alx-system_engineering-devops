@@ -1,2 +1,2 @@
 #!/bin/bash
-find -type f -name "*.git" | sort -t / k2,2 | LC_ALL=C sort -f > temp_sorted_files.txt 
+find . -type f -name "*.gif" -printf "%f\n" | rev | cut -d '.' -f2- | rev | LC_ALL=C sort -f
