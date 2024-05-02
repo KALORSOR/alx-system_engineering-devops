@@ -46,7 +46,7 @@ frontend www-http
 
 frontend www-https
     mode http
-    bind *:443 ssl crt /etc/haproxy/certs/www.topunderscodebnb.tech.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.kalorsorweb.tech.pem
     reqadd X-Forwarded-Proto:\ https
     acl letsencrypt-acl path_beg /.well-known/acme-challenge/
     use_backend letsencrypt-backend if letsencrypt-acl
@@ -62,4 +62,4 @@ backend www-backend
 
 backend letsencrypt-backend
     mode http
-    server letsencrypt 54.162.85.144 
+    server letsencrypt 127.0.0.1:530442 
