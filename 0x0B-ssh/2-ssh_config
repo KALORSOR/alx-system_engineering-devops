@@ -9,7 +9,7 @@ Host *
     #   User username
     #   IdentityFile ~/.ssh/private_key
 
-#Host 35.168.2.60
+#Host 18.206.233.219
     # Specify configuration options for host 35.168.2.60 here
     # For example:
     #   User username
@@ -34,7 +34,7 @@ Host *
 #   IdentityFile ~/.ssh/id_dsa
 #   IdentityFile ~/.ssh/id_ecdsa
 #   IdentityFile ~/.ssh/id_ed25519
-#   Port 22
+   Port 22
 #   Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
 #   MACs hmac-md5,hmac-sha1,umac-64@openssh.com
 #   EscapeChar ~
@@ -46,4 +46,5 @@ Host *
 #   RekeyLimit 1G 1h
     SendEnv LANG LC_*
     HashKnownHosts yes
+	PubkeyAuthentication yes
 
